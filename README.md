@@ -54,7 +54,19 @@ As funcionalidades do sistema incluem:
 
 ### Modelagem do Banco de Dados
 #### Esquema do Banco de Dados
-bla bla bla
+- Descrição: Fornecer uma visão geral do esquema do banco de dados, incluindo tabelas e relações entre elas.
+- Diagrama ER: Incluir o diagrama Entidade-Relacionamento para ilustrar visualmente o esquema do banco de dados.
+
+#### Modelos de Dados
+- Descrição: Descrever os principais modelos de dados e suas funções no sistema. Explicar brevemente cada tabela, suas colunas principais, e como elas se relacionam com outras tabelas.
+
+### Implantação do Banco de Dados
+#### Ambiente de Desenvolvimento
+- Configuração Local: Instruções sobre como configurar o banco de dados localmente para desenvolvimento e testes.
+- Dados de Teste: Explicar como gerar dados de teste para o banco de dados de desenvolvimento.
+
+#### Ambiente de Produção
+- Provedor de banco de dados: mencionar o serviço de banco de dados usado na produção (Amazon RDS).
 
 ## Configuração
 - Incluindo variáveis de ambiente e configurações do banco de dados.
