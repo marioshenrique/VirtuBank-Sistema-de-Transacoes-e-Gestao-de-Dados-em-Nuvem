@@ -27,7 +27,8 @@ As funcionalidades do sistema incluem:
 - Lista das principais tecnologias e bibliotecas utilizadas no projeto (FastAPI, SQLAlchemy, JWT, etc.)
 
 ## Estrutura do Projeto
-- Descrição da arquitetura e estrutura de diretórios do projeto.
+### API
+bla bla bla
 
 ## Configuração
 - Incluindo variáveis de ambiente e configurações do banco de dados.
