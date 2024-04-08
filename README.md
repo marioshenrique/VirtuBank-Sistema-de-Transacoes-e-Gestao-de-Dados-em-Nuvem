@@ -27,7 +27,33 @@ As funcionalidades do sistema incluem:
 - Lista das principais tecnologias e bibliotecas utilizadas no projeto (FastAPI, SQLAlchemy, JWT, etc.)
 
 ## Estrutura do Projeto
-### API
+### API Controller
+- Descrição: explicar a função da API dentro do sistema, como ela é utilizada para manipular transações bancárias e autenticação de usuários.
+- Endpoints Principais: Listar os principais endpoints disponíveis na API e uma breve descrição de sua funcionalidade.
+- Tecnologias Utilizadas: Detalhar as tecnologias usadas na construção da API (FastAPI, SQLAlchemy, etc).
+
+### Serviço de Autenticação (auth_service)
+- Descrição: Descrever como o serviço de autenticação funciona para proteger as rotas da API e validar os usuários.
+- Mecanismo de autenticação: Explicar o mecanismo de autenticação usado (tokem JWT).
+- Dependências: Listar as bibliotecas e frameworks utilizados para autenticação.
+
+### Serviço de Conta (account_service)
+- Descrição: Descrever como o serviço de conta funciona.
+
+### Serviço de Transações (transaction_service)
+- Descrição: Descrever como o serviço de transações funciona.
+
+### Camada de Dados (Data Layer)
+- Descrição: Oferecer uma visão geral da camada de dados, explicando como ela interage com o banco de dados para realizar operações CRUD.
+- Modelos de Dados: Descrever os modelos de dados usados.
+- Repositórios: Explicar a função dos repositórios na abstração das operações do banco de dados.
+
+### Interface do Usuário (UI)
+- Descrição: Apresentar informações sobre a interface do usuário, como ela permite interações com o sistema de transações.
+- Tecnologias Utilizadas: Detalhar as tecnologias e ferramentas usadas para desenvolver a UI (frameworks e bibliotecas de UI).
+
+### Modelagem do Banco de Dados
+#### Esquema do Banco de Dados
 bla bla bla
 
 ## Configuração
