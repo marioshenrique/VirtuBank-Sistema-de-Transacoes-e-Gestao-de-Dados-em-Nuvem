@@ -55,9 +55,12 @@ Siga os passos para abrir o sistema desenvolvido neste projeto:
 1. Inicialize a aplicação a partir do executável 'VirtuBank.exe'
 2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema.
 
-Se preferir, poderá reconstruir o executável. Para isso, insira o seguinte comando no terminal:\
-'pyinstaller --noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add-data "app/tela_operacoes;tela_operacoes/" --add-data "app/api_client.py;." --add-data "app/login_interface.py;." --add-data "app/operations_interface.py;." --add-data "app/start.py;." --add-data "app/VirtuBanck_icone-removebg-preview.ico;."  "app/start.py"'\
-Após a execução deste comando, duas novas pastas serão criadas: 'build' e 'dist'. O executável poderá ser encontrado na pasta 'dist'.\
+Se preferir, poderá reconstruir o executável. Para isso, insira o seguinte comando no terminal:
+
+'pyinstaller --noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add-data "app/tela_operacoes;tela_operacoes/" --add-data "app/api_client.py;." --add-data "app/login_interface.py;." --add-data "app/operations_interface.py;." --add-data "app/start.py;." --add-data "app/VirtuBanck_icone-removebg-preview.ico;."  "app/start.py"'
+
+Após a execução deste comando, duas novas pastas serão criadas: 'build' e 'dist'. O executável poderá ser encontrado na pasta 'dist'.
+
 As informações necessárias para testar a aplicação são fornecidas na seção 'Uso'.
 
 ## Uso
