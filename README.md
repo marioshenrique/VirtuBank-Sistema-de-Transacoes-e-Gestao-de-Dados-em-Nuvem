@@ -12,12 +12,27 @@ As funcionalidades do sistema incluem:
 - Consulta de saldos e informações detalhadas da conta;
 - Acesso a extratos das transações efetuadas.
 
-## Índice
-- Incluir um índice para facilitar a navegação pelo documento.
-
 ## Início Rápido
-- Pré-requisitos: lista de softwares necessários para rodar o projeto (Python, Docker, etc).
-- Instalação: passos para clonar o repositório e instalar dependências.
+Este guia fornece instruções rápidas para começar a usar o sistema.
+### Pré-requisitos
+Antes de iniciar, certifique-se de ter os seguintes softwares instalados em seu sistema:
+- Python (versão 3.10 ou superior)
+- Visual Studio Code (ou outra IDE de preferência)
+- Postman
+- Git
+- 
+### Instalação para Desenvolvimento
+Siga os passos abaixo para configurar o ambiente e iniciar o projeto:
+
+1. Clonar o repositório
+Use o Git para clonar o repositório do projeto para o seu ambiente local. Abra um terminal e digite o seguinte comando:
+https://github.com/marioshenrique/simple_banking_transaction_system.git
+2. 
+3. Configurar o ambiente virtual
+4. Instalar dependências
+5. Configurar variáveis de ambiente
+6. Reconstruir o banco de dados do PostgreSQL na máquina local
+7. Executar o projeto
 
 ## Uso
 - Instruções detalhadas sobre como usar o sistema, incluindo exemplos de operações bancárias como saque, depósito, transferência, etc.
