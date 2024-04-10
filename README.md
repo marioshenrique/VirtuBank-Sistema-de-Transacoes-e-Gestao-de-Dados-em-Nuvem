@@ -27,15 +27,15 @@ Siga os passos abaixo para configurar o ambiente e iniciar o projeto:
 1. **Clonar o repositório**
 Use o Git para clonar o repositório do projeto para o seu ambiente local. Abra um terminal e digite o seguinte comando:
 
-https://github.com/marioshenrique/simple_banking_transaction_system.git
+  https://github.com/marioshenrique/simple_banking_transaction_system.git
 
 2. **Configurar o ambiente virtual**
 Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para isolar as dependências do projeto. Execute dentro do terminal:
 python -m venv venv
 Ative o ambiente virtual com o comando:
 
-cd simple_banking_transaction_system
-.venv\Scripts\activate
+  cd simple_banking_transaction_system
+  .venv\Scripts\activate
 
 4. **Instalar dependências**
 Instale todas as dependências necessárias para o projeto usando o arquivo 'requirements.txt' fornecido dentro da pasta do projeto. Com o ambiente virtual ativado, execute o seguinte comando:
