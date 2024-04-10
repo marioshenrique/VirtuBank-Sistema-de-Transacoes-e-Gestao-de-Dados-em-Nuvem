@@ -52,12 +52,12 @@ Após a instalação das dependências e configurações das variáveis de ambie
 ### Instalação para Testes do Sistema
 Siga os passos para abrir o sistema desenvolvido neste projeto:
 
-1. Inicialize a aplicação a partir do executável 'VirtuBank.exe'\
-2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema.\
+1. Inicialize a aplicação a partir do executável 'VirtuBank.exe'
+2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema.
 
 Se preferir, poderá reconstruir o executável. Para isso, insira o seguinte comando no terminal:\
-'auto-py-to-exe'\
-'--noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add-data "app/tela_operacoes;tela_operacoes/" --add-data "app/api_client.py;." --add-data "app/login_interface.py;." --add-data "app/operations_interface.py;." --add-data "app/start.py;." --add-data "app/VirtuBanck_icone-removebg-preview.ico;."  "app/start.py"'
+-'auto-py-to-exe'\
+-'--noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add-data "app/tela_operacoes;tela_operacoes/" --add-data "app/api_client.py;." --add-data "app/login_interface.py;." --add-data "app/operations_interface.py;." --add-data "app/start.py;." --add-data "app/VirtuBanck_icone-removebg-preview.ico;."  "app/start.py"'
 
 ## Uso
 - Instruções detalhadas sobre como usar o sistema, incluindo exemplos de operações bancárias como saque, depósito, transferência, etc.
