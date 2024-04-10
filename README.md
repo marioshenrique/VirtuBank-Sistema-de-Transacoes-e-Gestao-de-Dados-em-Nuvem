@@ -30,12 +30,13 @@ https://github.com/marioshenrique/simple_banking_transaction_system.git
 
 2. **Configurar o ambiente virtual**\
 Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para isolar as dependências do projeto. Execute dentro do terminal:\
-python -m venv venv\
-Ative o ambiente virtual com o comando:\
+'python -m venv venv\'
+3. **Ativar o ambiente virtual com o comando**\
+Ative o ambiente virtual com o seguinte comando:\
 cd simple_banking_transaction_system \
-.venv\Scripts\activate \
+.venv\Scripts\activate
 
-4. **Instalar dependências**\
+5. **Instalar dependências**\
 Instale todas as dependências necessárias para o projeto usando o arquivo 'requirements.txt' fornecido dentro da pasta do projeto. Com o ambiente virtual ativado, execute o seguinte comando:
 
 pip install -r requirements.txt
