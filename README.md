@@ -26,7 +26,7 @@ Siga os passos abaixo para configurar o ambiente e iniciar o projeto:
 
 1. **Clonar o repositório**\
 Use o Git para clonar o repositório do projeto para o seu ambiente local. Abra um terminal e digite o seguinte comando:\
-https://github.com/marioshenrique/simple_banking_transaction_system.git
+'https://github.com/marioshenrique/simple_banking_transaction_system.git'
 
 3. **Configurar o ambiente virtual**
 Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para isolar as dependências do projeto. Execute dentro do terminal:
