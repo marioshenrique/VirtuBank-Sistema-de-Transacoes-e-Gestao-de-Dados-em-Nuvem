@@ -36,21 +36,18 @@ Ative o ambiente virtual com o seguinte comando:\
 '.venv\Scripts\activate'
 
 5. **Instalar dependências**\
-Instale todas as dependências necessárias para o projeto usando o arquivo 'requirements.txt' fornecido dentro da pasta do projeto. Com o ambiente virtual ativado, execute o seguinte comando:
+Instale todas as dependências necessárias para o projeto usando o arquivo 'requirements.txt' fornecido dentro da pasta do projeto. Com o ambiente virtual ativado, execute o seguinte comando:\
+'pip install -r requirements.txt'
 
-pip install -r requirements.txt
-
-4. **Configurar variáveis de ambiente**
+4. **Configurar variáveis de ambiente**\
 Copie o arquivo '.env.example' contido no diretório 'api' para um novo arquivo chamado '.env' e preencha-o com suas configurações locais.
 
-5. **Reconstruir o banco de dados do PostgreSQL na máquina local**
-
+5. **Reconstruir o banco de dados do PostgreSQL na máquina local**\
 PENDENTE
 
-6. **Executar o projeto**
-Após a instalação das dependências e configurações das variáveis de ambiente, o sistema está pronto para ser executado em um servidor local. Para isso, execute o seguinte comando no terminal:
-
-uvicorn api.api_controller:app --reload    
+6. **Executar o projeto**\
+Após a instalação das dependências e configurações das variáveis de ambiente, o sistema está pronto para ser executado em um servidor local. Para isso, execute o seguinte comando no terminal:\
+'uvicorn api.api_controller:app --reload'
 
 ## Uso
 - Instruções detalhadas sobre como usar o sistema, incluindo exemplos de operações bancárias como saque, depósito, transferência, etc.
