@@ -97,7 +97,7 @@ O sistema é um aplicação de transações que segue uma arquitetura dividida e
 
 A estrutura geral do sistema é apresentada na figura a seguir.
 <p align="center">
-<img src="images/arquitetura_geral.png" width="900" height="600" alt="Arquitetura Geral do Sistema">
+<img src="images/arquitetura_geral.png" width="800" height="600" alt="Arquitetura Geral do Sistema">
 </p>
 
 ### Frontend
@@ -136,7 +136,7 @@ Através dessa estrutura, a Data Layer facilita uma separação entre a lógica 
 Em resumo, o sistema apresenta a seguine estrutura:
 
 <p align="center">
-<img src="images/arquitetura_simplificado.png" width="568" height="642" alt="Arquitetura Simplificada do Sistema">
+<img src="images/arquitetura_simplificado.png" width="450" height="470" alt="Arquitetura Simplificada do Sistema">
 </p>
 
 ### Modelagem do Banco de Dados
@@ -146,14 +146,14 @@ O banco de dados utilizado no projeto foi projetado para suportar operações de
 O modelo conceitual abaixo fornece uma visão da estrutura do banco de dados, destacando as entidades, seus atributos e as relações entre elas. A partir deste modelo ém possível entender como as informações são organizadas e como elas interagem dentro do sistema.
 
 <p align="center">
-<img src="images/modelo_conceitual.png" width="1292" height="700" alt="Modelo Conceitual do Banco de Dados">
+<img src="images/modelo_conceitual.png" width="815" height="700" alt="Modelo Conceitual do Banco de Dados">
 </p>
 
 #### Modelo Lógico
 O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecendo mais detalhes sobre a estrutura do banco de dados, incluindo tipos de dados, restrições e detalhes sobre as relações entre as tabelas. Esse modelo foi utilizado como base para a implementação física do banco de dados.
 
 <p align="center">
-<img src="images/modelo_logico.png" width="1292" height="550" alt="Modelo Lógico do Banco de Dados">
+<img src="images/modelo_logico.png" width="900" height="570" alt="Modelo Lógico do Banco de Dados">
 </p>
 
 #### Modelos de Dados
