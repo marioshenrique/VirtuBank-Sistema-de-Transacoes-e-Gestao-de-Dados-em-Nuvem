@@ -1,6 +1,6 @@
-# Sistema de Transações Simples
+# SISTEMA DE TRANSAÇÕES SIMPLES
 
-## Descrição
+## DESCRIÇÃO
 O projeto VirtuBank - Simulador Simples de Transações Bancárias é uma aplicação desktop desenvolvida com o intuito de simular operações bancárias básicas, como depósitos, saques, transferências, além de consulta de saldos e extratos. Este sistema foi criado como parte do meu processo de aprendizado pessoal em desenvolvimento de software, servindo como uma oportunidade prática para aplicar e demonstrar as habilidades e conhecimentos que venho adquirindo na área.
 
 Este projeto abrange práticas de desenvolvimento de software, tais como construção de APIs, modelagem e implantação de bancos de dados, implementação de medidas de segurança em aplicações desktop, etc. Este repositório serve como uma vitrine dos métodos, técnicas e tecnologias com as quais venho me familiarizando, demonstrando meu empenho em construir soluções de software robustas, escaláveis e seguras.
@@ -12,7 +12,7 @@ As funcionalidades do sistema incluem:
 - Consulta de saldos e informações detalhadas da conta;
 - Acesso a extratos das transações efetuadas.
 
-## Início Rápido
+## INÍCIO RÁPIDO
 Este guia fornece instruções rápidas para começar a usar o sistema.
 ### Pré-requisitos
 Antes de iniciar, certifique-se de ter os seguintes softwares instalados em seu sistema:
@@ -63,11 +63,11 @@ Após a execução deste comando, duas novas pastas serão criadas: 'build' e 'd
 
 As informações necessárias para testar a aplicação são fornecidas na seção 'Uso'.
 
-## Uso
+## USO
 - Instruções detalhadas sobre como usar o sistema, incluindo exemplos de operações bancárias como saque, depósito, transferência, etc.
 - Adicionar capturas de tela ou gifs demonstrando a utilização.
 
-## Tecnologias Utilizadas
+## TECNOLOGIAS UTILIZADAS
 Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvimento deste projeto.
 
 - **[FastAPI](https://fastapi.tiangolo.com/)**: Framework web para construção de APIs, escolhido devido à sua alta performance.
@@ -92,7 +92,7 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 
 - **[RDS AWS (Amazon Relational Database Service)](https://aws.amazon.com/pt/rds/)**: Serviço de banco de dados relacional gerenciado da Amazon Web Services. O RDS foi utilizado para hospedar o banco de dados PostgreSQL na nuvem.
 
-## Estrutura do Projeto
+## ESTRUTURA DO PROJETO
 O sistema é um aplicação de transações que segue uma arquitetura dividida em camadas, separando responsabilidades entre frontend e backend, e dentro do backend entre API Controller, Service Layer e Data Layer. Abaixo está detalhada a estrutura e a função de cada camada no sistema:
 
 A estrutura geral do sistema é apresentada na figura a seguir.
@@ -164,8 +164,15 @@ O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecen
 #### Ambiente de Produção
 - Provedor de banco de dados: mencionar o serviço de banco de dados usado na produção (Amazon RDS).
 
-## Configuração
+## CONFIGURAÇÃO
 - Incluindo variáveis de ambiente e configurações do banco de dados.
 
-## Autores e Reconhecimentos
-PENDENTE
+## AUTORES E RECONHECIMENTOS
+### Autor
+Este projeto foi desenvolvido por [Mario Henrique](https://github.com/marioshenrique), como parte de um esforço pessoal para aplicar conhecimentos adquiridos em desenvolvimento de software, com foco em práticas de engenharia de software, modelagem de dados e segurança de aplicações.
+
+### Contribuidores
+Gostaria de agradecer a todos que ofereceram suporte técnico e feedback durante o desenvolvimento deste projeto de portfólio pessoal.
+- **[Ewerton Oliveira](https://github.com/ewerton94/)**: Por fornecer suporte profissional, contribuindo com sugestões de arquitetura de software e boas práticas de desenvolvimento de aplicações.
+- **[Carlos Filho](https://github.com/CarlosFFilho)**: Pela troca de experiências e ideias ao longo do projeto.
+
