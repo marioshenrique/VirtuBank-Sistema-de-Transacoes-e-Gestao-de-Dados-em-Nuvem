@@ -78,6 +78,9 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 - **Pydantic**: Utilizado para validação de dados. O Pydantic foi empregado na construção da API para definição de esquemas de dados.
 - **python-dotenv**: Responsável por carregar as variáveis de ambiente a partir do arquivo '.env'.
 - **tkinter**: Biblioteca utilizada na criação das interfaces de usuário (UI).
+- **PostgreSQL**: Gerenciador de bancos de dados relacionais (SGBD).
+- **EC2 AWS (Amazon Elastic Compute Cloud)**: Serviço de computação em nuvem da Amazon Web Services que permite a computação em nuvem. Foi utilizado neste projeto para hospedar a aplicação.
+- **RDS AWS (Amazon Relational Database Service)**: Serviço de banco de dados relacional gerenciado da Amazon Web Services. O RDS foi utilizado para hospedar o banco de dados PostgreSQL na nuvem.
 ## Estrutura do Projeto
 ### API Controller
 - Descrição: explicar a função da API dentro do sistema, como ela é utilizada para manipular transações bancárias e autenticação de usuários.
