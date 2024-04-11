@@ -166,7 +166,12 @@ O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecen
 
 ### Implantação do Banco de Dados
 #### Ambiente de Desenvolvimento
-- Configuração Local: Instruções sobre como configurar o banco de dados localmente para desenvolvimento e testes.
+##### Configuração Local
+Para configurar o banco de dados local, siga estas etapas:
+1. Instalar o [PostgreSQL](https://www.postgresql.org/)\
+2. Criar o banco de dados\
+Utilize o seguinte comando SQL para criar um novo banco de dados:\
+CREATE DATABASE virtubank_dev\
 - Dados de Teste: Explicar como gerar dados de teste para o banco de dados de desenvolvimento.
 
 #### Ambiente de Produção
