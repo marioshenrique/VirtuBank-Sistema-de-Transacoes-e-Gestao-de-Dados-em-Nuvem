@@ -95,14 +95,16 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 ## Estrutura do Projeto
 O sistema é um aplicação de transações que segue uma arquitetura dividida em camadas, separando responsabilidades entre frontend e backend, e dentro do backend entre API Controller, Service Layer e Data Layer. Abaixo está detalhada a estrutura e a função de cada camada no sistema:
 
+<img src="images/modelo_conceitual.png" width="1292" height="850" alt="Modelo Conceitual do Banco de Dados">
+
 ### Frontend
-- start.py: Script de inicialização da aplicação no lado do cliente.
+- **start.py**: Script de inicialização da aplicação no lado do cliente.
   
-- login_interface.py: Interface gráfica para a tela de login.
+- **login_interface.py**: Interface gráfica para a tela de login.
   
-- operations_interface.py: Interface gráfica para a realização de operações de transação, consultas, etc.
+- **operations_interface.py**: Interface gráfica para a realização de operações de transação, consultas, etc.
   
-- api_client.py: Responsável pela comunicação com o backend, enviando requisições HTTP à API e processando as respostas para as interfaces de usuário.
+- **api_client.py**: Responsável pela comunicação com o backend, enviando requisições HTTP à API e processando as respostas para as interfaces de usuário.
 
 ### Backend
 #### Controller
@@ -110,21 +112,21 @@ O sistema é um aplicação de transações que segue uma arquitetura dividida e
 
 #### Service Layer
 Camada que contém a lógica de negócios do sistema, processando os dados recebidos do Controller e interagindo com o Data Layer para acessar ou modificar os dados no banco de dados.
-- Transaction Service: serviço responsável por gerenciar as transações realizadas no sistema pelo usuário a partir da tela de operações.
+- **Transaction Service**: serviço responsável por gerenciar as transações realizadas no sistema pelo usuário a partir da tela de operações.
   
-- Auth Service: Responsável por operações de autenticação e autorização.
+- **Auth Service**: Responsável por operações de autenticação e autorização.
 
-- Account Service: Responsável por gerenciar informações e operações de consulta relacionadas às contas dos usuários.
+- **Account Service**: Responsável por gerenciar informações e operações de consulta relacionadas às contas dos usuários.
 
 #### Data Layer
 Essa camada é responsável pela interação do sistema com o banco de dados PostgreSQL, que é hospedado no serviço RDS da AWS. Essa camada abstrai a lógica de acesso ao banco de dados, permitindo que a camada de serviço (Service Layer) solicite a execução de operações de dados sem se preocupar com os detalhes de implementação do banco de dados. As responsabilidades e componentes dessa camada incluem:
-- api_data_access.py: Eset script atua como um intermediário, expondo funções que são usadas pela Service Layer para solicitar operações de dados. Esse script não interage diretamente com o banco de dados, mas serve como um intermediário, invocando a lógica contida nos scripts do diretório 'repositories/', responsáveis por interagir diretamente com o banco de dados.
+- **api_data_access.py**: Eset script atua como um intermediário, expondo funções que são usadas pela Service Layer para solicitar operações de dados. Esse script não interage diretamente com o banco de dados, mas serve como um intermediário, invocando a lógica contida nos scripts do diretório 'repositories/', responsáveis por interagir diretamente com o banco de dados.
 
-- database_config.py: Armazena as configurações necessárias para conectar o backend ao banco de dados, incluindo credenciais, endereço do servidor, parâmetros de conexão, etc.
+- **database_config.py**: Armazena as configurações necessárias para conectar o backend ao banco de dados, incluindo credenciais, endereço do servidor, parâmetros de conexão, etc.
 
-- models/: Diretório que contém os modelos das tabelas do banco de dados, representando a estrutura de dados que o sistema utiliza. Cada modelo define a estrutura de uma tabela específica, incluindo os campos, tipos de dados, restrições, etc.
+- **models/**: Diretório que contém os modelos das tabelas do banco de dados, representando a estrutura de dados que o sistema utiliza. Cada modelo define a estrutura de uma tabela específica, incluindo os campos, tipos de dados, restrições, etc.
 
-- repositories/: Diretório que contém os scripts que implementam a lógica de interação direta com o banco de dados. Estes repositórios abstraem as consultas SQL e as operações de banco de dados, transformando os resultados em objetos python que podem ser manipulados pelo resto do sistema. Após processar umam solicitação, os repositórios devolvem a resposta para 'api_data_access.py' que, por sua vez, encaminha para a Service Layer.
+- **repositories/**: Diretório que contém os scripts que implementam a lógica de interação direta com o banco de dados. Estes repositórios abstraem as consultas SQL e as operações de banco de dados, transformando os resultados em objetos python que podem ser manipulados pelo resto do sistema. Após processar umam solicitação, os repositórios devolvem a resposta para 'api_data_access.py' que, por sua vez, encaminha para a Service Layer.
 
 Através dessa estrutura, a Data Layer facilita uma separação entre a lógica de negócios e as operações de banco de dados.
 
@@ -134,12 +136,12 @@ O banco de dados utilizado no projeto foi projetado para suportar operações de
 ##### Modelo Conceitual
 O modelo conceitual abaixo fornece uma visão da estrutura do banco de dados, destacando as entidades, seus atributos e as relações entre elas. A partir deste modelo ém possível entender como as informações são organizadas e como elas interagem dentro do sistema.
 
-<img src="images/modelo_conceitual.png" width="1292" height="850" alt="Modelo Conceitual do Banco de Dados">
+<img src="images/modelo_conceitual.png" width="1292" height="700" alt="Modelo Conceitual do Banco de Dados">
 
 #### Modelo Lógico
 O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecendo mais detalhes sobre a estrutura do banco de dados, incluindo tipos de dados, restrições e detalhes sobre as relações entre as tabelas. Esse modelo foi utilizado como base para a implementação física do banco de dados.
 
-<img src="images/modelo_logico.png" width="1292" height="700" alt="Modelo Lógico do Banco de Dados">
+<img src="images/modelo_logico.png" width="1292" height="550" alt="Modelo Lógico do Banco de Dados">
 
 #### Modelos de Dados
 - Descrição: Descrever os principais modelos de dados e suas funções no sistema. Explicar brevemente cada tabela, suas colunas principais, e como elas se relacionam com outras tabelas.
