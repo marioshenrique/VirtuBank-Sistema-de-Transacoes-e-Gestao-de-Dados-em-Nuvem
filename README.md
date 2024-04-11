@@ -104,8 +104,16 @@ A estrutura geral do sistema é apresentada na figura a seguir.
 - **start.py**: Script de inicialização da aplicação no lado do cliente.
   
 - **login_interface.py**: Interface gráfica para a tela de login.
+
+<p align="center">
+<img src="images/tela_login.png" width="300" height="384" alt="Tela de Login do Usuário">
+</p>
   
 - **operations_interface.py**: Interface gráfica para a realização de operações de transação, consultas, etc.
+
+<p align="center">
+<img src="images/tela_operacoes.png" width="750" height="500" alt="Tela de Login do Usuário">
+</p>
   
 - **api_client.py**: Responsável pela comunicação com o backend, enviando requisições HTTP à API e processando as respostas para as interfaces de usuário.
 
