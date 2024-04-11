@@ -93,30 +93,40 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 - **[RDS AWS (Amazon Relational Database Service)](https://aws.amazon.com/pt/rds/)**: Serviço de banco de dados relacional gerenciado da Amazon Web Services. O RDS foi utilizado para hospedar o banco de dados PostgreSQL na nuvem.
 
 ## Estrutura do Projeto
-### API Controller
-- Descrição: explicar a função da API dentro do sistema, como ela é utilizada para manipular transações bancárias e autenticação de usuários.
-- Endpoints Principais: Listar os principais endpoints disponíveis na API e uma breve descrição de sua funcionalidade.
-- Tecnologias Utilizadas: Detalhar as tecnologias usadas na construção da API (FastAPI, SQLAlchemy, etc).
+O sistema é um aplicação de transações que segue uma arquitetura dividida em camadas, separando responsabilidades entre frontend e backend, e dentro do backend entre API Controller, Service Layer e Data Layer. Abaixo está detalhada a estrutura e a função de cada camada no sistema:
 
-### Serviço de Autenticação (auth_service)
-- Descrição: Descrever como o serviço de autenticação funciona para proteger as rotas da API e validar os usuários.
-- Mecanismo de autenticação: Explicar o mecanismo de autenticação usado (tokem JWT).
-- Dependências: Listar as bibliotecas e frameworks utilizados para autenticação.
+### Frontend
+- start.py: Script de inicialização da aplicação no lado do cliente.
+  
+- login_interface.py: Interface gráfica para a tela de login.
+  
+- operations_interface.py: Interface gráfica para a realização de operações de transação, consultas, etc.
+  
+- api_client.py: Responsável pela comunicação com o backend, enviando requisições HTTP à API e processando as respostas para as interfaces de usuário.
 
-### Serviço de Conta (account_service)
-- Descrição: Descrever como o serviço de conta funciona.
+### Backend
+#### Controller
+- api_controller.py: Atua como um intermediário entre o frontend e o Service Layer, recebendo requisições HTTP do 'api_client.py', encaminhando-as para os services apropriados, e retornando as respostas processadas para o frontend via HTTP.
 
-### Serviço de Transações (transaction_service)
-- Descrição: Descrever como o serviço de transações funciona.
+#### Service Layer
+Camada que contém a lógica de negócios do sistema, processando os dados recebidos do Controller e interagindo com o Data Layer para acessar ou modificar os dados no banco de dados.
+- Transaction Service: serviço responsável por gerenciar as transações realizadas no sistema pelo usuário a partir da tela de operações.
+  
+- Auth Service: Responsável por operações de autenticação e autorização.
 
-### Camada de Dados (Data Layer)
-- Descrição: Oferecer uma visão geral da camada de dados, explicando como ela interage com o banco de dados para realizar operações CRUD.
-- Modelos de Dados: Descrever os modelos de dados usados.
-- Repositórios: Explicar a função dos repositórios na abstração das operações do banco de dados.
+- Account Service: Responsável por gerenciar informações e operações de consulta relacionadas às contas dos usuários.
 
-### Interface do Usuário (UI)
-- Descrição: Apresentar informações sobre a interface do usuário, como ela permite interações com o sistema de transações.
-- Tecnologias Utilizadas: Detalhar as tecnologias e ferramentas usadas para desenvolver a UI (frameworks e bibliotecas de UI).
+#### Data Layer
+Essa camada é responsável pela interação do sistema com o banco de dados PostgreSQL, que é hospedado no serviço RDS da AWS. Essa camada abstrai a lógica de acesso ao banco de dados, permitindo que a camada de serviço (Service Layer) solicite a execução de operações de dados sem se preocupar com os detalhes de implementação do banco de dados. As responsabilidades e componentes dessa camada incluem:
+- api_data_access.py: Eset script atua como um intermediário, expondo funções que são usadas pela Service Layer para solicitar operações de dados. Esse script não interage diretamente com o banco de dados, mas serve como um intermediário, invocando a lógica contida nos scripts do diretório 'repositories/', responsáveis por interagir diretamente com o banco de dados.
+
+- database_config.py: Armazena as configurações necessárias para conectar o backend ao banco de dados, incluindo credenciais, endereço do servidor, parâmetros de conexão, etc.
+
+- models/: Diretório que contém os modelos das tabelas do banco de dados, representando a estrutura de dados que o sistema utiliza. Cada modelo define a estrutura de uma tabela específica, incluindo os campos, tipos de dados, restrições, etc.
+
+- repositories/: Diretório que contém os scripts que implementam a lógica de interação direta com o banco de dados. Estes repositórios abstraem as consultas SQL e as operações de banco de dados, transformando os resultados em objetos python que podem ser manipulados pelo resto do sistema. Após processar umam solicitação, os repositórios devolvem a resposta para 'api_data_access.py' que, por sua vez, encaminha para a Service Layer.
+
+Através dessa estrutura, a Data Layer facilita uma separação entre a lógica de negócios e as operações de banco de dados.
 
 ### Modelagem do Banco de Dados
 #### Esquema do Banco de Dados
