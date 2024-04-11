@@ -14,40 +14,77 @@ As funcionalidades do sistema incluem:
 
 ## INÍCIO RÁPIDO
 Este guia fornece instruções rápidas para começar a usar o sistema.
-### Pré-requisitos
+### Instalação para Desenvolvimento
+Siga os passos abaixo para configurar o ambiente e iniciar o projeto:
+#### Pré-requisitos
 Antes de iniciar, certifique-se de ter os seguintes softwares instalados em seu sistema:
 - Python (versão 3.10 ou superior)
 - Visual Studio Code (ou outra IDE de preferência)
 - Postman
 - Git
 - PostgreSQL (versão 12 ou superior)
-### Instalação para Desenvolvimento
-Siga os passos abaixo para configurar o ambiente e iniciar o projeto:
-
 1. **Clonar o repositório**\
-Use o Git para clonar o repositório do projeto para o seu ambiente local. Abra um terminal e digite o seguinte comando:\
-https://github.com/marioshenrique/simple_banking_transaction_system.git
+Use o Git para clonar o repositório do projeto para o seu ambiente local. Abra um terminal e digite o seguinte comando:
+<body>
+  <pre>
+    https://github.com/marioshenrique/simple_banking_transaction_system.git
+  </pre>
+</body>
+</html>
 
-2. **Configurar o ambiente virtual**\
-Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para isolar as dependências do projeto. Execute dentro do terminal:\
-'python -m venv venv\'
-3. **Ativar o ambiente virtual com o comando**\
-Ative o ambiente virtual com o seguinte comando:\
-'.venv\Scripts\activate'
+3. **Configurar o ambiente virtual**\
+Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para isolar as dependências do projeto. Execute dentro do terminal:
+<body>
+  <pre>
+    python -m venv venv\
+  </pre>
+</body>
+</html>
+
+4. **Ativar o ambiente virtual com o comando**\
+Ative o ambiente virtual com o seguinte comando:
+<body>
+  <pre>
+    .venv\Scripts\activate
+  </pre>
+</body>
+</html>
 
 5. **Instalar dependências**\
 Instale todas as dependências necessárias para o projeto usando o arquivo 'requirements.txt' fornecido dentro da pasta do projeto. Com o ambiente virtual ativado, execute o seguinte comando:\
-'pip install -r requirements.txt'
+<body>
+  <pre>
+    pip install -r requirements.txt
+  </pre>
+</body>
+</html>
 
-4. **Configurar variáveis de ambiente**\
-Copie o arquivo '.env.example' contido no diretório 'api' para um novo arquivo chamado '.env' e preencha-o com suas configurações locais.
+4. **Configurar variáveis de ambiente**
+Copie o arquivo '.env.example' contido no diretório 'api' para um novo arquivo chamado '.env' e preencha-o com suas configurações locais.\
+O arquivo '.env' deverá conter a seguinte estrutura:
 
-5. **Reconstruir o banco de dados do PostgreSQL na máquina local**\
+<body>
+  <pre>
+    SECRET_KEY = 'SECRETKEY_JWT'
+    ALGORITHM = 'ALGORITHM_JWT'
+    DATABASE_URL = "postgresql://"[usuário]:[senha]@[host]/[base de dados]"
+    DATABASE_URL_ASYNC = "postgresql+asyncpg://[usuário]:[senha]@[host]/[base de dados]"
+  </pre>
+</body>
+</html>
+
+6. **Reconstruir o banco de dados do PostgreSQL na máquina local**\
 PENDENTE
 
-6. **Executar o projeto**\
-Após a instalação das dependências e configurações das variáveis de ambiente, o sistema está pronto para ser executado em um servidor local. Para isso, execute o seguinte comando no terminal:\
-'uvicorn api.api_controller:app --reload'
+7. **Executar o projeto**\
+Após a instalação das dependências e configurações das variáveis de ambiente, o sistema está pronto para ser executado em um servidor local. Para isso, execute o seguinte comando no terminal:
+<body>
+  <pre>
+    uvicorn api.api_controller:app --reload
+  </pre>
+</body>
+</html>
+Em seguida, execute o script 'start.py' para inicializar o sistema.
 
 ### Instalação para Testes do Sistema
 Siga os passos para abrir o sistema desenvolvido neste projeto:
@@ -56,8 +93,14 @@ Siga os passos para abrir o sistema desenvolvido neste projeto:
 2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema.
 
 Se preferir, poderá reconstruir o executável. Para isso, insira o seguinte comando no terminal:
-
-'pyinstaller --noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add-data "app/tela_operacoes;tela_operacoes/" --add-data "app/api_client.py;." --add-data "app/login_interface.py;." --add-data "app/operations_interface.py;." --add-data "app/start.py;." --add-data "app/VirtuBanck_icone-removebg-preview.ico;."  "app/start.py"'
+<body>
+  <pre>
+    'pyinstaller --noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add
+    data "app/tela_operacoes;tela_operacoes/" --add-data "app/api_client.py;." --add-data "app/login_interface.py;." --add-data "app/operations_interface.py;." --add-data "app/start.py;." --add-data
+    "app/VirtuBanck_icone-removebg-preview.ico;."  "app/start.py"'
+  </pre>
+</body>
+</html>
 
 Após a execução deste comando, duas novas pastas serão criadas: 'build' e 'dist'. O executável poderá ser encontrado na pasta 'dist'.
 
@@ -163,22 +206,6 @@ O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecen
 <p align="center">
 <img src="images/modelo_logico.png" width="900" height="570" alt="Modelo Lógico do Banco de Dados">
 </p>
-
-### Implantação do Banco de Dados
-#### Ambiente de Desenvolvimento
-##### Configuração Local
-Para configurar o banco de dados local, siga estas etapas:
-1. Instalar o [PostgreSQL](https://www.postgresql.org/)\
-2. Criar o banco de dados\
-Utilize o seguinte comando SQL para criar um novo banco de dados:\
-CREATE DATABASE virtubank_dev\
-- Dados de Teste: Explicar como gerar dados de teste para o banco de dados de desenvolvimento.
-
-#### Ambiente de Produção
-- Provedor de banco de dados: mencionar o serviço de banco de dados usado na produção (Amazon RDS).
-
-## CONFIGURAÇÃO
-- Incluindo variáveis de ambiente e configurações do banco de dados.
 
 ## AUTORES E RECONHECIMENTOS
 ### Autor
