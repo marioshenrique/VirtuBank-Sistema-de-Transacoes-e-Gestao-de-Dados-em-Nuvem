@@ -110,7 +110,7 @@ O sistema é um aplicação de transações que segue uma arquitetura dividida e
 
 ### Backend
 #### Controller
-- api_controller.py: Atua como um intermediário entre o frontend e o Service Layer, recebendo requisições HTTP do 'api_client.py', encaminhando-as para os services apropriados, e retornando as respostas processadas para o frontend via HTTP.
+- **api_controller.py**: Atua como um intermediário entre o frontend e o Service Layer, recebendo requisições HTTP do 'api_client.py', encaminhando-as para os services apropriados, e retornando as respostas processadas para o frontend via HTTP.
 
 #### Service Layer
 Camada que contém a lógica de negócios do sistema, processando os dados recebidos do Controller e interagindo com o Data Layer para acessar ou modificar os dados no banco de dados.
