@@ -95,7 +95,7 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 ## Estrutura do Projeto
 O sistema é um aplicação de transações que segue uma arquitetura dividida em camadas, separando responsabilidades entre frontend e backend, e dentro do backend entre API Controller, Service Layer e Data Layer. Abaixo está detalhada a estrutura e a função de cada camada no sistema:
 
-<img src="images/modelo_conceitual.png" width="1292" height="850" alt="Modelo Conceitual do Banco de Dados">
+<img src="images/arquitetura_simplificado.png" width="1292" height="1300" alt="Arquitetura Simplificada do Sistema">
 
 ### Frontend
 - **start.py**: Script de inicialização da aplicação no lado do cliente.
