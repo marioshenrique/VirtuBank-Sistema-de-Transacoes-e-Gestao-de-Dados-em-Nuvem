@@ -120,8 +120,9 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 
 ### Modelagem do Banco de Dados
 #### Esquema do Banco de Dados
-- Descrição: Fornecer uma visão geral do esquema do banco de dados, incluindo tabelas e relações entre elas.
-- Diagrama ER: Incluir o diagrama Entidade-Relacionamento para ilustrar visualmente o esquema do banco de dados.
+O banco de dados utilizado no projeto foi projetado para suportar operações de transações, gerenciamento de contas de usuário e autenticação no sistema. A modelagem foi feita utilizando boas práticas de design de banco de dados relacional para segurar a integridade, segurança e escalabilidade dos dados do sistema.
+##### Modelo Conceitual
+bla bla bla
 
 #### Modelos de Dados
 - Descrição: Descrever os principais modelos de dados e suas funções no sistema. Explicar brevemente cada tabela, suas colunas principais, e como elas se relacionam com outras tabelas.
