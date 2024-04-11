@@ -156,9 +156,6 @@ O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecen
 <img src="images/modelo_logico.png" width="900" height="570" alt="Modelo Lógico do Banco de Dados">
 </p>
 
-#### Modelos de Dados
-- Descrição: Descrever os principais modelos de dados e suas funções no sistema. Explicar brevemente cada tabela, suas colunas principais, e como elas se relacionam com outras tabelas.
-
 ### Implantação do Banco de Dados
 #### Ambiente de Desenvolvimento
 - Configuração Local: Instruções sobre como configurar o banco de dados localmente para desenvolvimento e testes.
@@ -170,5 +167,5 @@ O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecen
 ## Configuração
 - Incluindo variáveis de ambiente e configurações do banco de dados.
 
-##Autores e Reconhecimentos
-- Créditos aos autores e colaboradores do projeto.
+## Autores e Reconhecimentos
+PENDENTE
