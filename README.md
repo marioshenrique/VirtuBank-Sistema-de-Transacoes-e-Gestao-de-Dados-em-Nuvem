@@ -122,7 +122,8 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 #### Esquema do Banco de Dados
 O banco de dados utilizado no projeto foi projetado para suportar operações de transações, gerenciamento de contas de usuário e autenticação no sistema. A modelagem foi feita utilizando boas práticas de design de banco de dados relacional para segurar a integridade, segurança e escalabilidade dos dados do sistema.
 ##### Modelo Conceitual
-bla bla bla
+O modelo conceitual abaixo fornece uma visão da estrutura do banco de dados, destacando as entidades, seus atributos e as relações entre elas. A partir deste modelo ém possível entender como as informações são organizadas e como elas interagem dentro do sistema.
+<img src="images/modelo_conceitual.png" width="500" height="300" alt="Modelo Conceitual do Banco de Dados">
 
 #### Modelos de Dados
 - Descrição: Descrever os principais modelos de dados e suas funções no sistema. Explicar brevemente cada tabela, suas colunas principais, e como elas se relacionam com outras tabelas.
