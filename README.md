@@ -71,16 +71,27 @@ As informações necessárias para testar a aplicação são fornecidas na seç�
 Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvimento deste projeto.
 
 - **FastAPI**: Framework web para construção de APIs, escolhido devido à sua alta performance.
+  
 - **SQLAlchemy**: Biblioteca SQL toolkit e Object-Relational Mapping (ORM) que permite trabalhar com bancos de dados de forma segura, auxiliando na construção de um código mais limpo e organizado.
+
 - **JWT (JSON Web Tokens)**: Foi implementada a autenticação e autorização no sistema por meio de JWT. Permitindo a criação de tokens de acesso e atualização para segurança do sistema e gerenciamento de sessões de usuários.
+
 - **PyJWT**: Biblioteca pra codificar e decodificar tokens JWT. Essencial para autenticação e autorização no projeto.
+
 - **Uvicorn**: Servidor ASGI utilizado para execução da aplicação FastAPI.
+
 - **Pydantic**: Utilizado para validação de dados. O Pydantic foi empregado na construção da API para definição de esquemas de dados.
+
 - **python-dotenv**: Responsável por carregar as variáveis de ambiente a partir do arquivo '.env'.
+
 - **tkinter**: Biblioteca utilizada na criação das interfaces de usuário (UI).
+
 - **PostgreSQL**: Gerenciador de bancos de dados relacionais (SGBD).
+
 - **EC2 AWS (Amazon Elastic Compute Cloud)**: Serviço de computação em nuvem da Amazon Web Services que permite a computação em nuvem. Foi utilizado neste projeto para hospedar a aplicação.
+
 - **RDS AWS (Amazon Relational Database Service)**: Serviço de banco de dados relacional gerenciado da Amazon Web Services. O RDS foi utilizado para hospedar o banco de dados PostgreSQL na nuvem.
+
 ## Estrutura do Projeto
 ### API Controller
 - Descrição: explicar a função da API dentro do sistema, como ela é utilizada para manipular transações bancárias e autenticação de usuários.
