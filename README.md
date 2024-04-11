@@ -95,8 +95,9 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 ## Estrutura do Projeto
 O sistema é um aplicação de transações que segue uma arquitetura dividida em camadas, separando responsabilidades entre frontend e backend, e dentro do backend entre API Controller, Service Layer e Data Layer. Abaixo está detalhada a estrutura e a função de cada camada no sistema:
 
+A estrutura geral do sistema é apresentada na figura a seguir.
 <p align="center">
-<img src="images/arquitetura_simplificado.png" width="568" height="642" alt="Arquitetura Simplificada do Sistema">
+<img src="images/arquitetura_geral.png" width="1062" height="747" alt="Arquitetura Geral do Sistema">
 </p>
 
 ### Frontend
@@ -131,6 +132,12 @@ Essa camada é responsável pela interação do sistema com o banco de dados Pos
 - **repositories/**: Diretório que contém os scripts que implementam a lógica de interação direta com o banco de dados. Estes repositórios abstraem as consultas SQL e as operações de banco de dados, transformando os resultados em objetos python que podem ser manipulados pelo resto do sistema. Após processar umam solicitação, os repositórios devolvem a resposta para 'api_data_access.py' que, por sua vez, encaminha para a Service Layer.
 
 Através dessa estrutura, a Data Layer facilita uma separação entre a lógica de negócios e as operações de banco de dados.
+
+Em resumo, o sistema apresenta a seguine estrutura:
+
+<p align="center">
+<img src="images/arquitetura_simplificado.png" width="568" height="642" alt="Arquitetura Simplificada do Sistema">
+</p>
 
 ### Modelagem do Banco de Dados
 #### Esquema do Banco de Dados
