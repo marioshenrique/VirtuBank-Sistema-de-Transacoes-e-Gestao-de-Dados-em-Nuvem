@@ -123,7 +123,7 @@ Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvim
 O banco de dados utilizado no projeto foi projetado para suportar operações de transações, gerenciamento de contas de usuário e autenticação no sistema. A modelagem foi feita utilizando boas práticas de design de banco de dados relacional para segurar a integridade, segurança e escalabilidade dos dados do sistema.
 ##### Modelo Conceitual
 O modelo conceitual abaixo fornece uma visão da estrutura do banco de dados, destacando as entidades, seus atributos e as relações entre elas. A partir deste modelo ém possível entender como as informações são organizadas e como elas interagem dentro do sistema.
-<img src="images/modelo_conceitual.png" width="1292" height="758" alt="Modelo Conceitual do Banco de Dados">
+<img src="images/modelo_conceitual.png" width="1292" height="1201" alt="Modelo Conceitual do Banco de Dados">
 
 #### Modelo Lógico
 O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecendo mais detalhes sobre a estrutura do banco de dados, incluindo tipos de dados, restrições e detalhes sobre as relações entre as tabelas. Esse modelo foi utilizado como base para a implementação física do banco de dados.
