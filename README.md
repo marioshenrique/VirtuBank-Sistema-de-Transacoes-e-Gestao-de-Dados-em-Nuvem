@@ -276,7 +276,7 @@ O modelo conceitual abaixo fornece uma visão da estrutura do banco de dados, de
 O modelo lógico mostrado abaixo é uma extensão do modelo conceitual, oferecendo mais detalhes sobre a estrutura do banco de dados, incluindo tipos de dados, restrições e detalhes sobre as relações entre as tabelas. Esse modelo foi utilizado como base para a implementação física do banco de dados.
 
 <p align="center">
-<img src="images/modelo_logico.png" width="900" height="570" alt="Modelo Lógico do Banco de Dados">
+<img src="images/modelo_logico.png" width="450" height="285" alt="Modelo Lógico do Banco de Dados">
 </p>
 
 ## AUTORES E RECONHECIMENTOS
