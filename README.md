@@ -259,7 +259,7 @@ Através dessa estrutura, a Data Layer facilita uma separação entre a lógica 
 Em resumo, o sistema apresenta a seguine estrutura:
 
 <p align="center">
-<img src="images/arquitetura_simplificado.png" width="450" height="470" alt="Arquitetura Simplificada do Sistema">
+<img src="images/arquitetura_simplificado.png" width="350" height="366" alt="Arquitetura Simplificada do Sistema">
 </p>
 
 ### Modelagem do Banco de Dados
