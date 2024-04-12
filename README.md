@@ -92,7 +92,7 @@ Siga os passos para abrir o sistema desenvolvido neste projeto:
 1. Inicialize a aplicação a partir do executável 'VirtuBank.exe'
 2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema.
 
-Se preferir, poderá reconstruir o executável. Para isso, insira o seguinte comando no terminal:
+Caso o firewall do seu sistema impeça o download da aplicação desktop, você poderá reconstruir o executável na sua máquina. Para isso, siga os passos fornecidos na seção "Instalação para Desenvolvimento" e, em seguida, insira o seguinte comando no terminal do diretório principal da aplicação:
 <body>
   <pre>
     'pyinstaller --noconfirm --onefile --windowed --icon "app/VirtuBanck_icone-removebg-preview.ico" --debug "all" --hidden-import=babel.numbers  --add-data "app/tela_login_usuario;tela_login_usuario/" --add
@@ -102,13 +102,22 @@ Se preferir, poderá reconstruir o executável. Para isso, insira o seguinte com
 </body>
 </html>
 
-Após a execução deste comando, duas novas pastas serão criadas: 'build' e 'dist'. O executável poderá ser encontrado na pasta 'dist'.
+Após a execução deste comando, duas novas pastas serão criadas no seu diretório principal: 'build' e 'dist'. O executável poderá ser encontrado na pasta 'dist'.
 
-As informações necessárias para testar a aplicação são fornecidas na seção 'Uso'.
+As informações de acesso necessárias para testar a aplicação são fornecidas na seção 'Uso'.
 
 ## USO
-- Instruções detalhadas sobre como usar o sistema, incluindo exemplos de operações bancárias como saque, depósito, transferência, etc.
-- Adicionar capturas de tela ou gifs demonstrando a utilização.
+
+| Número da Agência | Número da Conta | Senha |
+|-------------|-------------|-------------|
+| 739567 | 10428246323 | senha1234 |
+| 962957 | 29095636477 | senha1234 |
+| 128563 | 58122730766 | senha1234 |
+| 739567 | 35344959773 | senha1234 |
+| 128563 | 60424333326 | senha1234 |
+| 128563 | 97213348767 | senha1234 |
+| 739567 | 07006585712 | senha1234 |
+| 128563 | 98269132845 | senha1234 |
 
 ## TECNOLOGIAS UTILIZADAS
 Abaixo destaco as principais ferramentos que foram utilizadas para o desenvolvimento deste projeto.
