@@ -82,7 +82,7 @@ Instale todas as dependências necessárias para o projeto usando o arquivo 'req
 </body>
 </html>
 
-5. **Configurar variáveis de ambiente**
+5. **Configurar variáveis de ambiente**\
 Copie o arquivo '.env.example' contido no diretório 'api' para um novo arquivo chamado '.env' e preencha-o com suas configurações locais.\
 O arquivo '.env' deverá conter a seguinte estrutura:
 
