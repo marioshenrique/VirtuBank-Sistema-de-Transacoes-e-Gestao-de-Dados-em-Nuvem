@@ -227,7 +227,7 @@ A estrutura geral do sistema é apresentada na figura a seguir.
 - **operations_interface.py**: Interface gráfica para a realização de operações de transação, consultas, etc. Responsável por exibir a interface gráfica onde os usuários podem efetuar suas operações no sistema.
 
 <p align="center">
-<img src="images/tela_operacoes.png" width="600" height="400" alt="Tela de Operações">
+<img src="images/tela_operacoes.png" width="400" height="267" alt="Tela de Operações">
 </p>
   
 - **api_client.py**: Responsável pela comunicação com o backend, enviando requisições HTTP à API e processando as respostas para as interfaces de usuário.
