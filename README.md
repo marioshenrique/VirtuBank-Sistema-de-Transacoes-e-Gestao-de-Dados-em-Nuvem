@@ -212,7 +212,7 @@ O sistema é um aplicação de transações que segue uma arquitetura dividida e
 
 A estrutura geral do sistema é apresentada na figura a seguir.
 <p align="center">
-<img src="images/arquitetura_geral.png" width="800" height="600" alt="Arquitetura Geral do Sistema">
+<img src="images/arquitetura_geral.png" width="400" height="300" alt="Arquitetura Geral do Sistema">
 </p>
 
 ### Frontend
