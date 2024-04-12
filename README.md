@@ -1,4 +1,4 @@
-# SISTEMA DE TRANSAÇÕES E GESTÃO DE DADOS BANCÁRIOS EM NUVEM: Um Projeto de Aprendizado de Desenvolvimento de Software
+# SISTEMA DE TRANSAÇÕES E GESTÃO DE DADOS EM NUVEM: Um Projeto de Aprendizado de Desenvolvimento de Software
 
 ## DESCRIÇÃO
 O projeto VirtuBank é uma aplicação desktop desenvolvida com o intuito de simular operações bancárias básicas, como depósitos, saques, transferências, além de consulta de saldos e extratos. Este sistema foi criado como parte do meu processo de aprendizado pessoal em desenvolvimento de software, servindo como uma oportunidade prática para aplicar e demonstrar as habilidades e conhecimentos que venho adquirindo na área.
