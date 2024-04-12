@@ -138,6 +138,7 @@ Após a instalação das dependências e configurações das variáveis de ambie
   </pre>
 </body>
 </html>
+
 9. **Configurar a URL base da API**\
 Configure a URL BASE da API no scprit 'api_client.py' na pasta 'app/' com a URL fornecida pelo uvicorn como endpoint base para conectar o frontend com o backend.
 
