@@ -221,7 +221,7 @@ A estrutura geral do sistema é apresentada na figura a seguir.
 - **login_interface.py**: Interface gráfica para a tela de login. É Responsável por exibir a interface de login conforme mostrado na figura abaixo.
 
 <p align="center">
-<img src="images/tela_login.png" width="250" height="320" alt="Tela de Login do Usuário">
+<img src="images/tela_login.png" width="225" height="289" alt="Tela de Login do Usuário">
 </p>
   
 - **operations_interface.py**: Interface gráfica para a realização de operações de transação, consultas, etc. Responsável por exibir a interface gráfica onde os usuários podem efetuar suas operações no sistema.
