@@ -1,9 +1,7 @@
-# SISTEMA DE TRANSAÇÕES SIMPLES
+# SISTEMA DE TRANSAÇÕES E GESTÃO DE DADOS BANCÁRIOS EM NUVEM: Um Projeto de Aprendizado de Desenvolvimento de Software
 
 ## DESCRIÇÃO
-O projeto VirtuBank - Simulador Simples de Transações Bancárias é uma aplicação desktop desenvolvida com o intuito de simular operações bancárias básicas, como depósitos, saques, transferências, além de consulta de saldos e extratos. Este sistema foi criado como parte do meu processo de aprendizado pessoal em desenvolvimento de software, servindo como uma oportunidade prática para aplicar e demonstrar as habilidades e conhecimentos que venho adquirindo na área.
-
-Este projeto abrange práticas de desenvolvimento de software, tais como construção de APIs, modelagem e implantação de bancos de dados, implementação de medidas de segurança em aplicações desktop, etc. Este repositório serve como uma vitrine dos métodos, técnicas e tecnologias com as quais venho me familiarizando, demonstrando meu empenho em construir soluções de software robustas, escaláveis e seguras.
+O projeto VirtuBank é uma aplicação desktop desenvolvida com o intuito de simular operações bancárias básicas, como depósitos, saques, transferências, além de consulta de saldos e extratos. Este sistema foi criado como parte do meu processo de aprendizado pessoal em desenvolvimento de software, servindo como uma oportunidade prática para aplicar e demonstrar as habilidades e conhecimentos que venho adquirindo na área.
 
 As funcionalidades do sistema incluem:
 - Realização de saques;
@@ -11,6 +9,31 @@ As funcionalidades do sistema incluem:
 - Execução de transferências entre contas;
 - Consulta de saldos e informações detalhadas da conta;
 - Acesso a extratos das transações efetuadas.
+
+Este projeto abrange uma combinação de conhecimentos técnicos no desenvolvimento backend de software, tais como:
+1. **Linguagem de Programação**:
+- Python.
+  
+2. **Banco de Dados e Gerenciamento de Dados**:
+- Modelagem: Construção de modelos conceituais e lógicos para o desenvolvimento de bancos de dados relacionais.
+  
+- SQL: Conhecimento em implementação e gerenciamento de bancos de dados relacionais usando PostgreSQL.
+  
+- ORMs: Uso de mapeamento objeto-relacional com o SQLAlchemy.
+  
+3. **Arquitetura de Sistemas**:
+- Desenvolvimento de APIs com FastAPI.
+  
+- Conhecimento de padrões de projeto e arquitetura para facilitar a escalabilidade e manutenção do sistema.
+  
+- Autenticação e segurança: implementação de autenticação, autorização e segurança em APIs com uso de tokens JWT.
+  
+4. **Compreensão de Performance e Otimização**:
+- Análise de performance para otimizar o desempenho da aplicação: identificação de gargalos e implementação de melhorias para otimizar a perfomance do sistema.
+
+5. **Serviços de Nuvem**:
+- EC2 AWS: Criação e gerenciamento de instâncias de servidor virtual para hospedar a aplicação.
+- RDS AWS: Criação e gerenciamento de instâncias de banco de dados relacional.
 
 ## INÍCIO RÁPIDO
 Este guia fornece instruções rápidas para começar a usar o sistema.
@@ -32,7 +55,7 @@ Use o Git para clonar o repositório do projeto para o seu ambiente local. Abra 
 </body>
 </html>
 
-3. **Configurar o ambiente virtual**\
+2. **Configurar o ambiente virtual**\
 Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para isolar as dependências do projeto. Execute dentro do terminal:
 <body>
   <pre>
@@ -41,7 +64,7 @@ Navegue até a pasta do projeto clonado e crie um ambiente virtual Python para i
 </body>
 </html>
 
-4. **Ativar o ambiente virtual com o comando**\
+3. **Ativar o ambiente virtual com o comando**\
 Ative o ambiente virtual com o seguinte comando:
 <body>
   <pre>
@@ -50,7 +73,7 @@ Ative o ambiente virtual com o seguinte comando:
 </body>
 </html>
 
-5. **Instalar dependências**\
+4. **Instalar dependências**\
 Instale todas as dependências necessárias para o projeto usando o arquivo 'requirements.txt' fornecido dentro da pasta do projeto. Com o ambiente virtual ativado, execute o seguinte comando:\
 <body>
   <pre>
@@ -59,7 +82,7 @@ Instale todas as dependências necessárias para o projeto usando o arquivo 'req
 </body>
 </html>
 
-4. **Configurar variáveis de ambiente**
+5. **Configurar variáveis de ambiente**
 Copie o arquivo '.env.example' contido no diretório 'api' para um novo arquivo chamado '.env' e preencha-o com suas configurações locais.\
 O arquivo '.env' deverá conter a seguinte estrutura:
 
@@ -74,9 +97,40 @@ O arquivo '.env' deverá conter a seguinte estrutura:
 </html>
 
 6. **Reconstruir o banco de dados do PostgreSQL na máquina local**\
-PENDENTE
+Para reconstruir a estrutura do banco de dados na sua máquina local, siga os passos abaixo:
+- Crie uma instância vazia do banco de dados executando o seguinte comando no seu terminal:
+<body>
+  <pre>
+    psql -U username -h hostname -d postgres -c "CREATE DATABASE database_sistema;"
+  </pre>
+</body>
+</html>
 
-7. **Executar o projeto**\
+- Importe o arquivo de estrutura SQL contido em 'database/init/' para o novo banco de dados usando o 'psql':
+<body>
+  <pre>
+    psql -U username -h hostname -d database_sistema -f database_structure.sql
+  </pre>
+</body>
+</html>
+
+- Após isso, verifique se todas as tabelas foram criadas corretamente e verifique também as definições das tabelas.
+
+7. **Gerar e Inserir dados no Banco de Dados**\
+Para gerar dados e inseri-los no banco de dados criado localmente em sua máquina, siga os passos abaixo:
+- Na pasta 'database/seed' configure a URI de conexão com o banco de dados, que deverá estar no seguinte formato:
+<body>
+  <pre>
+    uri = "postgresql://'[usuário]:[senha]@[host]/[base de dados]'"
+  </pre>
+</body>
+</html>
+  
+- Na pasta 'database/seed/' execute o script 'generate_data.py'. Esse script ira gerar os dados fakes para as tabelas 'CLIENTE', CONTA_BANCARIA', AGENCIA e CARTOES_CLIENTE. Com esses dados você poderá logar e realizar testes no sistema para verificar a funcionalidade da aplicação.
+ 
+- Após a execução do script 'generate_data.py' visualize as tabelas e verifique se os dados foram inseridos corretamente antes de executar a aplicação.
+    
+8. **Executar o projeto**\
 Após a instalação das dependências e configurações das variáveis de ambiente, o sistema está pronto para ser executado em um servidor local. Para isso, execute o seguinte comando no terminal:
 <body>
   <pre>
@@ -84,13 +138,19 @@ Após a instalação das dependências e configurações das variáveis de ambie
   </pre>
 </body>
 </html>
-Em seguida, execute o script 'start.py' para inicializar o sistema.
+9. **Configurar a URL base da API**\
+Configure a URL BASE da API no scprit 'api_client.py' na pasta 'app/' com a URL fornecida pelo uvicorn como endpoint base para conectar o frontend com o backend.
 
-### Instalação para Testes do Sistema
-Siga os passos para abrir o sistema desenvolvido neste projeto:
+10. **Executar a aplicação**\
+Em seguida, execute o script 'start.py' contido na pasta 'app/' para inicializar o sistema.
+
+As credenciais de login que deverão ser fornecidas são as credenciais das contas que estão armazenadas no banco de dados local, caso o sistema esteja usando o banco de dados local.
+
+### Instalação para Testes do Sistema em Produção
+Siga os passos baixo para acessar o sistema em produção:
 
 1. Inicialize a aplicação a partir do executável 'VirtuBank.exe'
-2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema.
+2. Insira as informações de 'número da agência', 'número da conta corrente' e 'senha', fornecidos na seção a seguir, para acessar o sistema em produção.
 
 Caso o firewall do seu sistema impeça o download da aplicação desktop, você poderá reconstruir o executável na sua máquina. Para isso, siga os passos fornecidos na seção "Instalação para Desenvolvimento" e, em seguida, insira o seguinte comando no terminal do diretório principal da aplicação:
 <body>
@@ -104,9 +164,11 @@ Caso o firewall do seu sistema impeça o download da aplicação desktop, você 
 
 Após a execução deste comando, duas novas pastas serão criadas no seu diretório principal: 'build' e 'dist'. O executável poderá ser encontrado na pasta 'dist'.
 
-As informações de acesso necessárias para testar a aplicação são fornecidas na seção 'Uso'.
+As informações de login necessárias para testar a aplicação são fornecidas na seção 'Uso'.
 
 ## USO
+
+As credenciais de acesso abaixo referem-se a contas cadastradas no banco de dados em produção. Essas credenciais são necessárias para acessar o sistema a partir da tela de login. Para ter acesso, basta selecionar uma das credenciais fornecidas abaixo:
 
 | Número da Agência | Número da Conta | Senha |
 |-------------|-------------|-------------|
