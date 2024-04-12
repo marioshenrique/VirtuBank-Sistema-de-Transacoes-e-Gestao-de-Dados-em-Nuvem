@@ -269,7 +269,7 @@ O banco de dados utilizado no projeto foi projetado para suportar operações de
 O modelo conceitual abaixo fornece uma visão da estrutura do banco de dados, destacando as entidades, seus atributos e as relações entre elas. A partir deste modelo ém possível entender como as informações são organizadas e como elas interagem dentro do sistema.
 
 <p align="center">
-<img src="images/modelo_conceitual.png" width="815" height="700" alt="Modelo Conceitual do Banco de Dados">
+<img src="images/modelo_conceitual.png" width="600" height="516" alt="Modelo Conceitual do Banco de Dados">
 </p>
 
 #### Modelo Lógico
